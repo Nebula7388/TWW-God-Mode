@@ -7,7 +7,7 @@ local serv = win:Server("Preview", "")
 local btns = serv:Channel("MAIN")
 local maxHealth = 0
 local function godMode()
-    while task.wait(1) do
+    while task.wait() do
         maxHealth = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
         game.Players.LocalPlayer.Character.Humanoid.Health = maxHealth - 1
     end
